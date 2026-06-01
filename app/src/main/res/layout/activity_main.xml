@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7ED"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:strokeColor="#FED7AA"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <!-- TITRE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_compteur"
+                android:textColor="#7C2D12"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_viewmodel"
+                android:textColor="#EA580C"
+                android:textSize="11sp"
+                android:letterSpacing="0.18"
+                android:layout_marginBottom="34dp" />
+
+            <!-- CERCLEEEE COMPTEURRRR -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="95dp"
+                app:cardBackgroundColor="#FFEDD5"
+                app:strokeColor="#FDBA74"
+                app:strokeWidth="3dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="38dp">
+
+                <TextView
+                    android:id="@+id/tvv__Counterrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/count_initial"
+                    android:textColor="#9A3412"
+                    android:textSize="82sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- BOUTONSSSSSS -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp">
+
+                <!-- AJOUTERRRRR -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/boutton__Incrementtttt"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/btn_ajouter"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#EA580C"
+                    app:cornerRadius="18dp" />
+
+                <!-- RETIRERRRR -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/boutton__Decrementtttt"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/btn_retirer"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#7C2D12"
+                    app:cornerRadius="18dp" />
+
+            </LinearLayout>
+
+            <!-- RESET -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bouttnResettt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_reset"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#C2410C"
+                app:strokeColor="#FDBA74"
+                app:strokeWidth="2dp"
+                app:cornerRadius="18dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

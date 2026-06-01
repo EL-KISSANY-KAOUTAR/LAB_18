@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ViewModelLiveDataDemoEnrichi</string>
+    <string name="title_compteur">Compteur</string>
+    <string name="subtitle_viewmodel">VIEWMODEL &amp;&amp; LIVEDATA</string>
+    <string name="count_initial">0</string>
+    <string name="btn_ajouter">Ajouter</string>
+    <string name="btn_retirer">Retirer</string>
+    <string name="btn_reset">Réinitialiser</string>
+    <string name="mode_sombre">MODEEEE SOMBREEEEEE</string>
+</resources>
